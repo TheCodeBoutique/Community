@@ -1,6 +1,6 @@
 class TcbsController < ApplicationController
-  skip_before_filter :authorize
-  #before_filter :authorize
+  #skip_before_filter :authorize
+  before_filter :authorize
   # GET /tcbs
   # GET /tcbs.json
   def index
