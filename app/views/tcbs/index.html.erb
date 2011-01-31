@@ -1,0 +1,27 @@
+<h1>Listing tcbs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Hashed password</th>
+    <th>Salt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tcbs.each do |tcb| %>
+  <tr>
+    <td><%= tcb.name %></td>
+    <td><%= tcb.hashed_password %></td>
+    <td><%= tcb.salt %></td>
+    <td><%= link_to 'Show', tcb %></td>
+    <td><%= link_to 'Edit', edit_tcb_path(tcb) %></td>
+    <td><%= link_to 'Destroy', tcb, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tcb', new_tcb_path %>

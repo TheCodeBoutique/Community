@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tcb.name %>
+</p>
+
+<p>
+  <b>Hashed password:</b>
+  <%= @tcb.hashed_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%= @tcb.salt %>
+</p>
+
+
+<%= link_to 'Edit', edit_tcb_path(@tcb) %> |
+<%= link_to 'Back', tcbs_path %>

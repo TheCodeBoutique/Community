@@ -1,0 +1,2 @@
+module AdmindesktopHelper
+end
